@@ -1,0 +1,111 @@
+/* General */
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif; /* Fuente sugerida por Figma */
+    background-color: #f0f0f0; /* Color de fondo general */
+    color: #333; /* Color del texto */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+h1 {
+    text-align: center;
+    color: #444; /* Color del título */
+}
+
+/* Contenedor principal dividido en dos partes */
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 20px;
+    flex: 1;
+}
+
+.left-section,
+.right-section {
+    flex: 1;
+    margin: 10px;
+}
+
+/* Estilo para el área de entrada y el área de presentación */
+textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+#output {
+    background-image: url('path/to/your/image.jpg'); /* Imagen proporcionada por Figma */
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff; /* Color del texto en el área de presentación */
+    padding: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    min-height: 100px;
+}
+
+/* Botones */
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #007bff; /* Color de fondo de los botones */
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #0056b3; /* Color de fondo del botón en hover */
+    transform: scale(1.05); /* Efecto de escala al pasar el cursor */
+}
+
+button:active {
+    background-color: #003d80; /* Color de fondo del botón cuando se presiona */
+}
+
+/* Botones de cifrar, descifrar y copiar */
+.button-group {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.button-group button {
+    flex: 1;
+}
+
+#copyButton {
+    margin-top: 10px;
+}
+
+/* Mensaje de validación */
+#validationMessage {
+    display: none;
+    margin-top: 10px;
+}
+
+/* Pie de página */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #007bff; /* Color de fondo del pie de página */
+    color: #fff;
+    margin-top: auto;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Añadir una animación al cursor */
+body {
+    cursor: url('path/to/your/cursor.png'), auto; /* Reemplaza con la ruta de tu imagen de cursor */
+}
